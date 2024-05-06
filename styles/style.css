@@ -1,12 +1,9 @@
-@charset "UTF-8";
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Open sans', sans-serif;
 }
-
 body {
     height: 100vh;
     width: 100vw;
@@ -18,93 +15,66 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .caixa-maior {
     background: black;
     opacity: 0.8;
-    
     padding: 20px;
     border-radius: 25px;
-
     width: 95%;
     max-width: 450px;
 }
-
 .input-cidade {
     padding: 10px;
     border: none;
     border-radius: 25px;
     outline: none;
-
     font-size: 18px;
-
-    color: white;
     background-color: #7c7c7c6b;
-
     width: calc(100% - 60px);
 }
-
 .botao-busca {
     padding: 10px;
     border: none;
     border-radius: 50%;
     outline: none;
-
     background-color: #7c7c7c6b;
-
     cursor: pointer;
-
     float: right;
-
-    transition-duration: .2s;
+    transition: .2s;
 }
-
 .botao-busca:hover {
     background-color: #7c7c7cab;
 }
-
 .img-busca {
     width: 20px;
 }
-
 .caixa-media {
-    margin: 30px 0px 0px 0px;
+    margin-top: 30px;
     display: block;
 }
-
 .escondido {
     display: none;
 }
-
+p, h2, input {
+    color: white;
+}
 .cidade {
     font-size: 28px;
     font-weight: 300;
-    color: white;
 }
-
 .temp {
     font-size: 20px;
-    color: white;
-
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
 }
-
 .caixa-menor {
     display: flex;
-
     align-items: center;
-
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
 }
-
 .texto-previsao {
-    color: white;
-    margin: 0px 0px 0px 20px;
+    margin-left: 20px;
     text-transform: capitalize;
 }
-
 .umidade {
-    color: white;
-
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
 }

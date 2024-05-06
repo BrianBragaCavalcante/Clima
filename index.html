@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles/style.css">
+                                                                                
+    <!-- Arquivo JavaScript -->
     <script src="js/scripts.js"></script>
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <!-- Arquivo Css -->
+    <link rel="shortcut icon" href="https://openweathermap.org/img/wn/04n.png" type="image/x-icon">
+
+    <!-- Fonte Open-Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <title>Previsão do Tempo</title>
 </head>
+
 <body>
 
     <div class="caixa-maior">
-        <input placeholder="Digite o nome da cidade" class="input-cidade">
+
+        <!-- input principal -->
+        <input placeholder="Digite o nome da cidade" class="input-cidade" type="text">
+
         <button class="botao-busca" onclick="clickButton()">
-            <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca">
+            <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="icone-busca">
         </button>
 
+        <!-- dados -->
         <div class="caixa-media escondido" id="dados">
+
             <h2 class="cidade"></h2>
 
             <p class="temp"></p>
@@ -27,12 +41,15 @@
             <div class="caixa-menor">
                 <img src="" class="img-previsao">
                 <p class="texto-previsao"></p>
+
             </div>
 
             <p class="umidade"></p>
+
         </div>
 
     </div>
 
 </body>
+
 </html>
