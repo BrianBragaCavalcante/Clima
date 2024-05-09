@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/style.css">
-                                                                                
-    <!-- Arquivo JavaScript -->
-    <script src="js/scripts.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
 
-    <!-- Arquivo Css -->
-    <link rel="shortcut icon" href="https://openweathermap.org/img/wn/04n.png" type="image/x-icon">
+        <!-- Arquivo JavaScript -->
+        <script src="js/scripts.js"></script>
 
-    <!-- Fonte Open-Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- Arquivo Css -->
+        <link
+            rel="shortcut icon"
+            href="https://openweathermap.org/img/wn/04n.png"
+            type="image/x-icon"
+        />
 
-    <title>Previsão do Tempo</title>
-</head>
+        <!-- Fonte Open-Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
 
-<body>
+        <title>Previsão do Tempo</title>
+    </head>
 
-    <div class="caixa-maior">
+    <body>
+        <div class="caixa-maior">
+            <!-- input principal -->
+            <input
+                placeholder="Digite o nome da cidade"
+                class="input-cidade"
+                id="input-principal"
+                type="text"
+            />
 
-        <!-- input principal -->
-        <input placeholder="Digite o nome da cidade" class="input-cidade" type="text">
+            <button class="botao-busca" onclick="clickButton()">
+                <img
+                    class="img-busca"
+                    src="https://www.svgrepo.com/show/488200/find.svg"
+                    alt="icone-busca"
+                />
+            </button>
 
-        <button class="botao-busca" onclick="clickButton()">
-            <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="icone-busca">
-        </button>
+            <!-- dados -->
+            <div class="caixa-media escondido" id="dados">
+                <h2 class="cidade"></h2>
 
-        <!-- dados -->
-        <div class="caixa-media escondido" id="dados">
+                <p class="temp"></p>
 
-            <h2 class="cidade"></h2>
+                <div class="caixa-menor">
+                    <img src="" class="img-previsao" />
+                    <p class="texto-previsao"></p>
+                </div>
 
-            <p class="temp"></p>
-
-            <div class="caixa-menor">
-                <img src="" class="img-previsao">
-                <p class="texto-previsao"></p>
-
+                <p class="umidade"></p>
             </div>
-
-            <p class="umidade"></p>
-
         </div>
-
-    </div>
-
-</body>
-
+    </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

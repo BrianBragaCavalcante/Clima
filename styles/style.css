@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open sans', sans-serif;
 }
+
 body {
     height: 100vh;
     width: 100vw;
@@ -15,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .caixa-maior {
     background: black;
     opacity: 0.8;
@@ -23,6 +25,7 @@ body {
     width: 95%;
     max-width: 450px;
 }
+
 .input-cidade {
     padding: 10px;
     border: none;
@@ -32,8 +35,11 @@ body {
     background-color: #7c7c7c6b;
     width: calc(100% - 60px);
 }
+
 .botao-busca {
     padding: 10px;
+    height: 44px;
+    width: 44px;
     border: none;
     border-radius: 50%;
     outline: none;
@@ -42,39 +48,51 @@ body {
     float: right;
     transition: .2s;
 }
+
 .botao-busca:hover {
     background-color: #7c7c7cab;
 }
+
 .img-busca {
     width: 20px;
 }
+
 .caixa-media {
     margin-top: 30px;
     display: block;
 }
+
 .escondido {
     display: none;
+    width: 0px;
+    height: 0px;
 }
+
 p, h2, input {
     color: white;
 }
+
 .cidade {
     font-size: 28px;
     font-weight: 300;
 }
+
 .temp {
     font-size: 20px;
     margin-top: 20px;
 }
+
 .caixa-menor {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
+
 .texto-previsao {
     margin-left: 20px;
     text-transform: capitalize;
 }
+
 .umidade {
     margin-top: 20px;
 }
